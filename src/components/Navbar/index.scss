@@ -1,0 +1,35 @@
+@import "../../theme/mixins.scss";
+@import "../../theme/variables.scss";
+
+.navbar-container {
+  width: 100%;
+  padding: 1.6rem;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+  .navbar {
+   
+    ul {
+      @include center;
+      list-style: none;
+      li {
+        font-size: 2rem;
+        margin: 0 1.25rem;
+        a {
+          text-decoration: none;
+          color: $color-white;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: $color-primary;
+          }
+          &:active {
+            color: $color-primary-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
