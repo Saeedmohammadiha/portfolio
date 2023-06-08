@@ -1,19 +1,36 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
-    opacity: 1;
-    background-image: radial-gradient(circle at center center, #070707, #181818), repeating-radial-gradient(circle at center center, #464646, #464646, 15px, transparent 30px, transparent 15px);
-    background-blend-mode: multiply;
-    font-family:Arial, Helvetica, sans-serif;
-    @media (max-width: 1100px) {
-        font-size: 50%;
-    }
-    @media (max-width: 900px) {
-        font-size: 45%;
-    }
-
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #25303B;
+}
+#root {
+  height: 100%;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+//   opacity: 1;
+//   background-image: radial-gradient(circle at center center, #070707, #181818),
+//     repeating-radial-gradient(
+//       circle at center center,
+//       #464646,
+//       #464646,
+//       15px,
+//       transparent 30px,
+//       transparent 15px
+//     );
+//   background-blend-mode:normal;
+  font-family: Arial, Helvetica, sans-serif;
+  @media (max-width: 1100px) {
+    font-size: 50%;
+  }
+  @media (max-width: 900px) {
+    font-size: 45%;
+  }
 }

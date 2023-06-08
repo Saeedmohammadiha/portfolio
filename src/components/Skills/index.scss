@@ -1,0 +1,64 @@
+@import "../../theme/variables.scss";
+@import "../../theme/mixins.scss";
+
+.skills-container {
+  @include glass;
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: 0 2rem;
+  margin-top: 5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  .section {
+    width: 50%;
+    padding: 3rem;
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      p {
+        font-size: 2rem;
+        color: $color-white;
+        width: 20%;
+      }
+      div {
+        width: 80%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+}
+
+.divider {
+  &:hover {
+    cursor: pointer;
+  }
+  hr {
+    padding: 0.2rem;
+    background-color: $color-secondary-light;
+    margin:  2rem;
+    border-radius: 7px;
+    border: none;
+    width: 98%;
+  }
+  span {
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+    margin-top: -3.5rem;
+    color: $color-white;
+    background-color: $color-secondary-light;
+    width: 2.2rem;
+    overflow: hidden;
+    padding: 0.6rem;
+    img {
+      width: 100%;
+    }
+  }
+}
