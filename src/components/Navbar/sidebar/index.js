@@ -4,7 +4,7 @@ import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./useDimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
-import './style.scss';
+import "./style.scss";
 
 const sidebarAnimation = {
   open: (height = 1000) => ({
@@ -12,8 +12,8 @@ const sidebarAnimation = {
     transition: {
       type: "spring",
       stiffness: 20,
-      restDelta: 2
-    }
+      restDelta: 2,
+    },
   }),
   closed: {
     clipPath: "circle(30px at 40px 40px)",
@@ -21,9 +21,9 @@ const sidebarAnimation = {
       delay: 0.5,
       type: "spring",
       stiffness: 400,
-      damping: 40
-    }
-  }
+      damping: 40,
+    },
+  },
 };
 
 export const Sidebar = () => {
@@ -38,9 +38,10 @@ export const Sidebar = () => {
       custom={height}
       ref={containerRef}
       className="sidebar"
+      style={isOpen ? { width: "300px" } : { width: "0px" }}
     >
       <motion.div className="background" variants={sidebarAnimation} />
-      <Navigation toggleOpen={toggleOpen}/>
+      <Navigation toggleOpen={toggleOpen} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
