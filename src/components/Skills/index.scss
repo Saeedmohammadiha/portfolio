@@ -5,8 +5,8 @@
   @include glass;
   display: flex;
   flex-wrap: wrap;
-  width: 98%;
-  margin: 0 2rem;
+  width: 95%;
+  margin: 0 auto;
   margin-top: 5rem;
   border-radius: 5px;
   overflow: hidden;
@@ -42,10 +42,10 @@
   hr {
     padding: 0.2rem;
     background-color: $color-secondary-light;
-    margin:  2rem;
+    margin: 2rem auto;
     border-radius: 7px;
     border: none;
-    width: 98%;
+    width: 95%;
   }
   span {
     border-radius: 50px;
