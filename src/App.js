@@ -8,7 +8,7 @@ import TimeLine from "./components/Timeline";
 const App = () => (
   <>
     <Navbar />
-    <Header />
+    {/* <Header /> */}
     <Skills />
     <TimeLine />
   </>

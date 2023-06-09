@@ -61,7 +61,7 @@ export default function Skills() {
         animate={{
           height: isOpen ? "unset" : "45%",
         }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.5 , type: 'spring', bounce: .4}}
       >
         {skills.map((section) => {
           return (

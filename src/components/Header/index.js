@@ -10,11 +10,12 @@ export default function Header() {
     <header className="header" id="home">
       <div className="picture-container">
         <motion.div
-          initial={{ x: 0, y: 1000 }}
-          animate={{ x: 0, y: 0 }}
+          initial={{ scale: 0.1 }}
+          animate={{ scale: 1 }}
           transition={{
             duration: 1.5,
-            delay: 0.5,
+            type: "spring",
+            bounce: 0.7,
           }}
           className="icon sisco"
         >
@@ -31,10 +32,13 @@ export default function Header() {
           </motion.div>
         </motion.div>
         <motion.div
-          initial={{ x: 0, y: -1000 }}
-          animate={{ x: 0, y: 0 }}
+          initial={{ scale: 0.1 }}
+          animate={{ scale: 1 }}
           transition={{
             duration: 1.5,
+            type: "spring",
+            bounce: 0.7,
+            delay: 0.2,
           }}
           className="icon docker"
         >
@@ -53,7 +57,7 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.75 }}
+          transition={{ duration: 1.75, type:'spring' }}
         >
           <img src={hero} alt="hero" />
         </motion.div>
@@ -62,17 +66,18 @@ export default function Header() {
       <motion.div
         initial={{ x: "100%", scale: 0.1 }}
         animate={{ x: 0, scale: 1 }}
-        transition={{ duration: 1.25 }}
+        transition={{ duration: 1.25, type: "spring", bounce: 0.4 }}
         className="text-container"
       >
         <h4>hello i'm </h4>
         <h1>Masoud Kavehei</h1>
         <h3>Network engineer</h3>
 
-          <p className="descrption">
-            Hey are looking for network expert to <span>build and gorw </span>your network ? <br/>
-            let's shake hands with me.
-          </p>
+        <p className="descrption">
+          Hey are looking for network expert to <span>build and gorw </span>your
+          network ? <br />
+          let's shake hands with me.
+        </p>
 
         <motion.button
           whileHover={{
@@ -82,7 +87,7 @@ export default function Header() {
           whileTap={{ scale: 0.9 }}
           className="button"
         >
-          Get in Touch 
+          Get in Touch
           <motion.div
             initial={{ x: 0, y: 0 }}
             animate={{ x: 20, y: 0 }}
@@ -91,7 +96,9 @@ export default function Header() {
               duration: 1.2,
               repeatType: "reverse",
             }}
-          >&rarr;</motion.div>
+          >
+            &rarr;
+          </motion.div>
         </motion.button>
       </motion.div>
     </header>
