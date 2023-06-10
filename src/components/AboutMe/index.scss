@@ -1,0 +1,19 @@
+@import "../../theme/variables.scss";
+@import "../../theme/mixins.scss";
+
+.container {
+  @include glass;
+  // backdrop-filter: blur(10px);
+  width: 80%;
+  min-height: 90%;
+  font-size: 2rem;
+  color: $color-white;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding: 10rem 2.5rem;
+  margin: 8rem auto;
+  margin-bottom: 10rem;
+  p {
+    margin: 1rem 0;
+  }
+}

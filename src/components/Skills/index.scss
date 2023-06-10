@@ -3,11 +3,11 @@
 
 .skills-container {
  // @include glass;
+ padding: 4rem 0;
   display: flex;
   flex-wrap: wrap;
   width: 95%;
   margin: 0 auto;
-  margin-top: 5rem;
   border-radius: 5px;
   overflow-y: hidden;
   .section {

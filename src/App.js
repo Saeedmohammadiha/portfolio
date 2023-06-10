@@ -6,11 +6,13 @@ import Skills from "./components/Skills";
 import TimeLine from "./components/Timeline";
 import SlideShow from "./components/SlideShow";
 import Footer from "./components/Footer";
+import AboutMe from "./components/AboutMe";
 
 const App = () => (
   <>
     <Navbar />
     <Header /> 
+    <AboutMe/>
     <Skills />
     <TimeLine />
     <SlideShow/>
