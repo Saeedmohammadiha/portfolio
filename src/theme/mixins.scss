@@ -1,82 +1,15 @@
 @mixin glass {
-   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
-  @mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// media query manger
-
-// 0 - 600px : phone
-// 600 -900px : tablet portrait
-// 900 - 1200px : tablet landscape
-// 1200 -1800 : is where our normal style apply
-// 1800px + : big desktop
-
-// @mixin  respond-phone {
-//   @media (max-width:600px) {
-//     @content
-//   }
-// };
-
-/*
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-
-
-1em = 16px
-
-
-order: base + typography > general layout + grid> page layout > components
-*/
-@mixin respond($breakpoint) {
-    @if $breakpoint == phone {         //600px
-      // بست پرکتیس این است که بع این شکل باشد 
-     // @media only screen and (max-width: 37.5em) {
-      @media (max-width: 37.5em) {
-        @content;
-      }
-    }
-    @if $breakpoint == tab-port {      //900px
-      @media (max-width: 56.25em) {
-        @content;
-      }
-    }
-    @if $breakpoint == tab-land {      //1200px
-      @media (max-width: 75em) {
-        @content;
-      }
-    }
-    @if $breakpoint == big-desktop {   //1800px
-      @media (min-width: 112.5em) {
-        @content;
-      }
-    }
-  }
-  
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

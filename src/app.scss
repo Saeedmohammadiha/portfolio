@@ -1,3 +1,5 @@
+@import './theme/variables.scss';
+
 * {
   padding: 0;
   margin: 0;
@@ -7,25 +9,17 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: #25303B;
+  background-color: #25303b;
+ // background-color: $color-gray-dark-3;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23060c12' fill-opacity='0.21'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 #root {
   height: 100%;
 }
 html {
+  scroll-behavior: smooth;
   height: 100%;
   font-size: 62.5%;
-//   opacity: 1;
-//   background-image: radial-gradient(circle at center center, #070707, #181818),
-//     repeating-radial-gradient(
-//       circle at center center,
-//       #464646,
-//       #464646,
-//       15px,
-//       transparent 30px,
-//       transparent 15px
-//     );
-//   background-blend-mode:normal;
   font-family: Arial, Helvetica, sans-serif;
   @media (max-width: 1100px) {
     font-size: 50%;

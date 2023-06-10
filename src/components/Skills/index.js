@@ -56,10 +56,11 @@ export default function Skills() {
   return (
     <>
       <motion.section
+      id="skills"
         ref={ref}
         className="skills-container"
         animate={{
-          height: isOpen ? "unset" : "45%",
+          height: isOpen ? "unset" : "80%",
         }}
         transition={{ duration: 1.5 , type: 'spring', bounce: .4}}
       >

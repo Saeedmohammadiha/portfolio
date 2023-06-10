@@ -1,17 +1,15 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
-  }
-  body {
-    background: #25303B;
-  }
-  section#timeline {
+// html, body {
+//     margin: 0;
+//     padding: 0;
+//     font-family: Helvetica, sans-serif;
+//   }
+
+  section#journey {
     width: 80%;
-    margin: 2rem auto;
+    margin: 10rem auto;
     position: relative;
   }
-  section#timeline:before {
+  section#journey:before {
     content: '';
     display: block;
     position: absolute;
@@ -22,23 +20,23 @@ html, body {
     height: 100%;
     background: rgba(255,255,255,0.2);
   }
-  section#timeline article {
+  section#journey article {
     width: 100%;
     margin: 0 0 2rem 0;
     position: relative;
   }
-  section#timeline article:after {
+  section#journey article:after {
     content: '';
     display: block;
     clear: both;
   }
-  section#timeline article div.inner {
+  section#journey article div.inner {
     width: 40%;
     float: left;
     margin: .5rem 0 0 0;
     border-radius: 6px;
   }
-  section#timeline article div.inner span.date {
+  section#journey article div.inner span.date {
     display: block;
     width: 6rem;
     height: 5rem;
@@ -56,20 +54,20 @@ html, body {
     border: 2px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 0 .7rem #25303B;
   }
-  section#timeline article div.inner span.date span {
+  section#journey article div.inner span.date span {
     display: block;
     text-align: center;
   }
-  section#timeline article div.inner span.date span.day {
+  section#journey article div.inner span.date span.day {
     font-size: 1rem;
   }
-  section#timeline article div.inner span.date span.month {
+  section#journey article div.inner span.date span.month {
     font-size: 1.8rem;
   }
-  section#timeline article div.inner span.date span.year {
+  section#journey article div.inner span.date span.year {
     font-size: 1rem;
   }
-  section#timeline article div.inner h2 {
+  section#journey article div.inner h2 {
     padding: 1.5rem;
     margin: 0;
     color: #fff;
@@ -79,7 +77,7 @@ html, body {
     border-radius: 6px 6px 0 0;
     position: relative;
   }
-  section#timeline article div.inner h2:after {
+  section#journey article div.inner h2:after {
     content: '';
     position: absolute;
     top: 2rem;
@@ -88,7 +86,7 @@ html, body {
         height: 1rem;
     -webkit-transform: rotate(-45deg);
   }
-  section#timeline article div.inner p {
+  section#journey article div.inner p {
     padding: 1.5rem;
     margin: 0;
     font-size: 1.4rem;
@@ -96,39 +94,39 @@ html, body {
     color: #656565;
     border-radius: 0 0 6px 6px;
   }
-  section#timeline article:nth-child(2n+2) div.inner {
+  section#journey article:nth-child(2n+2) div.inner {
     float: right;
   }
-  section#timeline article:nth-child(2n+2) div.inner h2:after {
+  section#journey article:nth-child(2n+2) div.inner h2:after {
     left: -.5rem;
   }
-  section#timeline article:nth-child(1) div.inner h2 {
+  section#journey article:nth-child(1) div.inner h2 {
     background: #e74c3c;
   }
-  section#timeline article:nth-child(1) div.inner h2:after {
+  section#journey article:nth-child(1) div.inner h2:after {
     background: #e74c3c;
   }
-  section#timeline article:nth-child(2) div.inner h2 {
+  section#journey article:nth-child(2) div.inner h2 {
     background: #2ecc71;
   }
-  section#timeline article:nth-child(2) div.inner h2:after {
+  section#journey article:nth-child(2) div.inner h2:after {
     background: #2ecc71;
   }
-  section#timeline article:nth-child(3) div.inner h2 {
+  section#journey article:nth-child(3) div.inner h2 {
     background: #e67e22;
   }
-  section#timeline article:nth-child(3) div.inner h2:after {
+  section#journey article:nth-child(3) div.inner h2:after {
     background: #e67e22;
   }
-  section#timeline article:nth-child(4) div.inner h2 {
+  section#journey article:nth-child(4) div.inner h2 {
     background: #1abc9c;
   }
-  section#timeline article:nth-child(4) div.inner h2:after {
+  section#journey article:nth-child(4) div.inner h2:after {
     background: #1abc9c;
   }
-  section#timeline article:nth-child(5) div.inner h2 {
+  section#journey article:nth-child(5) div.inner h2 {
     background: #9b59b6;
   }
-  section#timeline article:nth-child(5) div.inner h2:after {
+  section#journey article:nth-child(5) div.inner h2:after {
     background: #9b59b6;
   }

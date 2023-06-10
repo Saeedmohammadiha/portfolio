@@ -79,7 +79,8 @@ export default function Header() {
           let's shake hands with me.
         </p>
 
-        <motion.button
+        <motion.a
+        href="#contact"
           whileHover={{
             scale: 1.1,
             transition: { duration: 0.4 },
@@ -99,7 +100,7 @@ export default function Header() {
           >
             &rarr;
           </motion.div>
-        </motion.button>
+        </motion.a>
       </motion.div>
     </header>
   );

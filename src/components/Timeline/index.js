@@ -66,14 +66,14 @@ export default function TimeLine() {
   }
 
   return (
-    <section id="timeline">
+    <section id="journey"  ref={ref} >
       {data.map((item, index) => {
         return (
           <article key={item.id}>
             <motion.div
-              ref={ref}
+             
               style={{
-                transform: isInView ? "none" : isEven(index) ? "translateX(-200px)" : "translateX(200px)",
+                transform: isInView ? "none" : isEven(index) ? "translateX(-100px)" : "translateX(100px)",
                 opacity: isInView ? 1 : 0,
                 transition: `all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.${index}s`,
               }}
