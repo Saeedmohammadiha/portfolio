@@ -4,13 +4,15 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import TimeLine from "./components/Timeline";
+import SlideShow from "./components/SlideShow";
 
 const App = () => (
   <>
     <Navbar />
-    {/* <Header /> */}
+    <Header /> 
     <Skills />
     <TimeLine />
+    <SlideShow/>
   </>
 );
 
